@@ -1,0 +1,258 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'newArray':  the writable size is 'm_capacity*4' bytes, but '8' bytes might be written."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/tyron/source/repos/game2001a1/game2001a1/game2001a1.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 13,
+                  "endLine": 20,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Array<int>::Expand",
+                  "decoratedName": "?Expand@?$Array@H@@IEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "'newArray' is an array of 1 elements (4 bytes)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<m_size')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'i' may equal 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume 'i<m_size')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid write to 'newArray[1]', (writable range is 0 to 0)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "MSVC Code Analysis",
+          "version": "14.44.35216.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/tyron/source/repos/game2001a1/game2001a1/game2001a1.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "f3c71e85d659aa9caebe8e8b1c643aabbd48c56da542cc01f7cf187671ce2380"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/tyron/source/repos/GAME2001A1/GAME2001A1/Array.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "afcf33cf515f19555a94fa916fe2cae8da25f5256ea1a827a45a44cb5872b006"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/tyron/source/repos/game2001a1/game2001a1/underarray.h"
+          },
+          "hashes": {
+            "sha-256": "75d90cbb88aa8bcbfa4539d001f1f798dc888381149afa7a32e1292edc0f947a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/tyron/source/repos/game2001a1/game2001a1/sortingarray.h"
+          },
+          "hashes": {
+            "sha-256": "0dc7fa2952c1340e276c0e399764e0576419a3f6b2318b4048a4bb7aa6954262"
+          }
+        }
+      ]
+    }
+  ]
+}

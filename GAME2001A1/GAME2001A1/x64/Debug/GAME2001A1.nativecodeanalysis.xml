@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+      <FILENAME>Array.h</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Buffer overrun while writing to 'newArray':  the writable size is 'm_capacity*4' bytes, but '8' bytes might be written.</DESCRIPTION>
+    <FUNCTION>Array&lt;int&gt;::Expand</FUNCTION>
+    <DECORATED>?Expand@?$Array@H@@IEAAXXZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>15</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>16</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>18</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'newArray' is an array of 1 elements (4 bytes)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>19</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>19</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'i&lt;m_size')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>19</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'i' may equal 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>19</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continue this loop, (assume 'i&lt;m_size')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tyron\source\repos\GAME2001A1\GAME2001A1\</FILEPATH>
+        <FILENAME>Array.h</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid write to 'newArray[1]', (writable range is 0 to 0)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
