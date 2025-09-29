@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\tyron\\source\\repos\\GAME2001A1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0224BEB-EFDD-4E3D-83D4-1D1B6FF9D867}|GAME2001A1\\GAME2001A1.vcxproj|C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\Array.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0224BEB-EFDD-4E3D-83D4-1D1B6FF9D867}|GAME2001A1\\GAME2001A1.vcxproj|solutionrelative:GAME2001A1\\Array.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0224BEB-EFDD-4E3D-83D4-1D1B6FF9D867}|GAME2001A1\\GAME2001A1.vcxproj|C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\GAME2001A1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0224BEB-EFDD-4E3D-83D4-1D1B6FF9D867}|GAME2001A1\\GAME2001A1.vcxproj|solutionrelative:GAME2001A1\\GAME2001A1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A0224BEB-EFDD-4E3D-83D4-1D1B6FF9D867}|GAME2001A1\\GAME2001A1.vcxproj|C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\UnderArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0224BEB-EFDD-4E3D-83D4-1D1B6FF9D867}|GAME2001A1\\GAME2001A1.vcxproj|solutionrelative:GAME2001A1\\UnderArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0224BEB-EFDD-4E3D-83D4-1D1B6FF9D867}|GAME2001A1\\GAME2001A1.vcxproj|C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\Array.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0224BEB-EFDD-4E3D-83D4-1D1B6FF9D867}|GAME2001A1\\GAME2001A1.vcxproj|solutionrelative:GAME2001A1\\Array.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SortingArray.h",
               "DocumentMoniker": "C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\SortingArray.h",
               "RelativeDocumentMoniker": "GAME2001A1\\SortingArray.h",
@@ -43,7 +43,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UnderArray.h",
               "DocumentMoniker": "C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\UnderArray.h",
               "RelativeDocumentMoniker": "GAME2001A1\\UnderArray.h",
@@ -56,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Array.h",
               "DocumentMoniker": "C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\Array.h",
               "RelativeDocumentMoniker": "GAME2001A1\\Array.h",
@@ -69,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GAME2001A1.cpp",
               "DocumentMoniker": "C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\GAME2001A1.cpp",
               "RelativeDocumentMoniker": "GAME2001A1\\GAME2001A1.cpp",
               "ToolTip": "C:\\Users\\tyron\\source\\repos\\GAME2001A1\\GAME2001A1\\GAME2001A1.cpp",
               "RelativeToolTip": "GAME2001A1\\GAME2001A1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-29T19:22:23.667Z",
               "EditorCaption": ""
